@@ -519,10 +519,8 @@ var $ = function(id){ return document.getElementById(id); };
 
 /* ---------- boot ---------- */
 var boot=$("boot"), bootTxt=$("bootTxt");
-var LINES=["ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL\n","INITIALIZING VAULT-TEC UNIFIED OS\n",
-  "COPYRIGHT 2075-2077 ROBCO INDUSTRIES\n","-SERVER 6-\n\n",
-  "LOADING VAULT 560 REGISTRY......... OK\n","DECRYPTING INVITATION.............. OK\n",
-  "CHECKING RAD LEVELS................ OK\n","SCANNING FOR DATA CORRUPTION....... 6 FLAGGED\n\n","WELCOME, DWELLER\n"];
+var LINES=["ROBCO INDUSTRIES (TM) TERMLINK PROTOCOL\n","VAULT-TEC UNIFIED OS  -SERVER 6-\n\n",
+  "LOADING VAULT 560 REGISTRY......... OK\n","SCANNING FOR DATA CORRUPTION....... 6 FLAGGED\n\n","WELCOME, DWELLER\n"];
 function endBoot(){ if(!boot) return; boot.style.transition="opacity .5s"; boot.style.opacity="0";
   document.body.classList.remove("locked");
   setTimeout(function(){ if(boot&&boot.parentNode) boot.parentNode.removeChild(boot); },520); boot=null; }
